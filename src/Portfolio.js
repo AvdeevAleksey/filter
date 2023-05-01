@@ -11,9 +11,9 @@ class Portfolio extends Component {
     render () {
         const filterBtnList = ['All', 'Websites', 'Flayers', 'Business Cards'];
         const projectList = {projectList};
-        const [filteredListProjects, setFilteredListProjects] = useState(projectList);
-        const [selected, setSelected] = useState('All');
         const filter = (e) => {
+            const [filteredListProjects, setFilteredListProjects] = useState(projectList);
+            const [selected, setSelected] = useState('All');
             const buttons = document.querySelectorAll('button');
             buttons.forEach((item) => item.classList.remove('active'));
             
